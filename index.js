@@ -5,11 +5,12 @@ var unshift = Array.prototype.unshift
  * make `fn` curryable
  *
  * @param  {function} fn
+ * @param {Number} [arity=fn.length]
  * @return {function}
  */
 
-module.exports = function(fn){
-	var arity = fn.length
+module.exports = function(fn, arity){
+	if (arity == null) arity = fn.length
 	return function curryable(){
 		// apply is slow
 		if (arguments.length >= arity) switch (arguments.length) {
