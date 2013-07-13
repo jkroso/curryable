@@ -20,7 +20,7 @@ module.exports = function(fn){
 			default:return fn.apply(this, arguments)
 		}
 		var args = arguments
-		return function(){
+		return function curriedFn(){
 			unshift.apply(arguments, args)
 			return curryable.apply(this, arguments)
 		}
