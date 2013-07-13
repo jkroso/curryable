@@ -11,6 +11,7 @@ var unshift = Array.prototype.unshift
 
 module.exports = function(fn, arity){
 	if (arity == null) arity = fn.length
+	else if (arity < 0) arity = fn.length + arity
 	return function curryable(){
 		// apply is slow
 		if (arguments.length >= arity) switch (arguments.length) {

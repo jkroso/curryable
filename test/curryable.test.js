@@ -46,4 +46,11 @@ describe('user defined arity', function(){
 		curryable(spy, 5)(1,1,1,1,1)
 		spy.should.not.have.been.called
 	})
+
+	it('should support negative numbers', function(){
+		curryable(spy, -1)(1,2)(3).should.equal(6)
+		curryable(spy, -2)(1)(2).should.equal(3)
+		curryable(spy, -3)(1).should.equal(1)
+		curryable(spy, -4)().should.equal(0)
+	})
 })
