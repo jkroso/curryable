@@ -1,0 +1,17 @@
+{
+  "name": "curryable",
+  "version": "0.1.0",
+  "description": "decorate a function so it will curry if not given enough arguments",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jkroso/curryable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkroso/curryable/issues"
+  },
+  "keywords": ["curry","partial"],
+  "author": "Jake Rosoman",
+  "license": "MIT"
+}

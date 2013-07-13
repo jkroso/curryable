@@ -1,0 +1,21 @@
+{
+  "name": "curryable",
+  "repo": "jkroso/curryable",
+  "description": "decorate a function so it will curry if not given enough arguments",
+  "version": "0.1.0",
+  "keywords": [
+    "curry",
+    "partial"
+  ],
+  "dependencies": {},
+  "development": {
+    "visionmedia/mocha": "1.12.0",
+    "jkroso/serve": "1.4.3",
+    "chaijs/chai-spies": "0.5.1",
+    "chaijs/chai": "1.7.2"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
