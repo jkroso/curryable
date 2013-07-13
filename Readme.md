@@ -19,16 +19,25 @@ var curryable = require('curryable')
 
 - [curryable()](#curryable)
 
-### curryable(fn:function)
+### curryable(fn:function, [arity]:Number)
 
   make `fn` curryable
 
 ```js
 var add = curryable(function(a, b){
-	return a + b
+  return a + b
 })
 var add1 = add(1)
 add1(1) == add(1, 1) == 2 // => true
+```
+
+  The optional `arity` argument allows you to specify how many arguments are optional
+
+```js
+var add = curryable(function(a, b, c){
+  return a + b + (c || 0)
+}, -1)
+add(1)(2) == add(1)(2, 0) // => true
 ```
 
 ## Running the tests
