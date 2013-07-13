@@ -2,7 +2,7 @@
   "name": "curryable",
   "repo": "jkroso/curryable",
   "description": "decorate a function so it will curry if not given enough arguments",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "curry",
     "partial"
